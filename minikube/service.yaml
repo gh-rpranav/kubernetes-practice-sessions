@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort # 1. Automatically opens a static port on your cluster nodes
   selector:
-    app: nginx # 2. Routes traffic directly to your NGINX Pod. This should match the pod's label.
+    app: webapp # 2. Routes traffic directly to your NGINX Pod. This should match the pod's label.
   ports:
   - port: 80 # The port inside the cluster
     targetPort: 80 # The port NGINX listens on
